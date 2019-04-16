@@ -41,5 +41,9 @@ set showmatch
 " enable all Python syntax highlighting features
 let python_highlight_all = 1
 
-" startup nerdtree
+" startup nerdtree, show hidden files
 autocmd VimEnter * NERDTree
+let NERDTreeShowHidden=1
+
+" yank to system clipboard,'plus' for linux, otherwise just 'unnamed'
+set clipboard=unnamedplus

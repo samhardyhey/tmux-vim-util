@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# autoflake all unused imports, variables etc.
+autoflake --expand-star-imports --remove-unused-variables --remove-all-unused-imports --remove-duplicate-keys --recursive --in-place ./*
+echo '**Flaked entire repo**'
+
+# black the entire repo
+black .
+echo '**Blacked entire repo**'
